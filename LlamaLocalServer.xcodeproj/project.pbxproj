@@ -20,6 +20,11 @@
 
 /* Begin PBXFileReference section */
 		13A3CF012F9E4A230022D5DC /* LlamaLocalServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LlamaLocalServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A3CF4B2F9E63180022D5DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		13A3CF4C2F9E63FE0022D5DC /* start-daemon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "start-daemon.sh"; sourceTree = "<group>"; };
+		13A3CF4D2F9E63FE0022D5DC /* stop-daemon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "stop-daemon.sh"; sourceTree = "<group>"; };
+		13A3CF4E2F9E68B70022D5DC /* listen-daemon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "listen-daemon.sh"; sourceTree = "<group>"; };
+		13A3CF4F2F9E68BF0022D5DC /* local.aichallenge.llama-server.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "local.aichallenge.llama-server.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +49,11 @@
 		13A3CEF82F9E4A230022D5DC = {
 			isa = PBXGroup;
 			children = (
+				13A3CF4F2F9E68BF0022D5DC /* local.aichallenge.llama-server.plist */,
+				13A3CF4E2F9E68B70022D5DC /* listen-daemon.sh */,
+				13A3CF4C2F9E63FE0022D5DC /* start-daemon.sh */,
+				13A3CF4D2F9E63FE0022D5DC /* stop-daemon.sh */,
+				13A3CF4B2F9E63180022D5DC /* README.md */,
 				13A3CF032F9E4A230022D5DC /* LlamaLocalServer */,
 				13A3CF022F9E4A230022D5DC /* Products */,
 			);

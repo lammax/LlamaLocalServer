@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>local.aichallenge.llama-server</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-lc</string>
+    <string>exec "$HOME/Documents/ThisIsMy/Programming/AI/LlamaLocalServer/build/Build/Products/Release/LlamaLocalServer"</string>
+  </array>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>LLAMA_SERVER_BIN</key>
+    <string>/opt/homebrew/bin/llama-server</string>
+    <key>LLAMA_HOST</key>
+    <string>127.0.0.1</string>
+    <key>LLAMA_PORT</key>
+    <string>8080</string>
+    <key>LLAMA_API_KEY</key>
+    <string>change-me</string>
+    <key>LLAMA_MODEL_ALIAS</key>
+    <string>local-private</string>
+    <key>LLAMA_CTX_SIZE</key>
+    <string>16384</string>
+    <key>LLAMA_PARALLEL</key>
+    <string>2</string>
+    <key>LLAMA_N_PREDICT</key>
+    <string>2048</string>
+    <key>LLAMA_THREADS</key>
+    <string>-1</string>
+    <key>LLAMA_RESTART_DELAY_SECONDS</key>
+    <string>3</string>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/LlamaLocalServer/llama-server.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/tmp/LlamaLocalServer/llama-server.err.log</string>
+</dict>
+</plist>
